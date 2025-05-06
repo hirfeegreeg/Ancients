@@ -1,0 +1,175 @@
+/* Base Styling */
+body {
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap; /* Allow navbar items to stack on smaller screens */
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ffd700;
+}
+
+.scroll-wrapper {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h1, h2 {
+  color: #ffd700;
+}
+
+.tagline, .mystic-text {
+  font-style: italic;
+  color: #ccc;
+}
+
+.details li {
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.placeholder-button,
+.discord-btn,
+.back-btn {
+  background-color: #ffd700;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.placeholder-button:hover,
+.discord-btn:hover,
+.back-btn:hover {
+  background-color: #e6c200;
+}
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Below (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      padding: 1rem;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .scroll-wrapper {
+      padding: 1rem;
+  }
+
+  .placeholder-button,
+  .discord-btn,
+  .back-btn {
+      width: 100%;
+      padding: 1rem;
+  }
+
+  h1 {
+      font-size: 2rem;
+      text-align: center;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+
+  .tagline, .mystic-text {
+      font-size: 1rem;
+  }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .logo {
+      font-size: 1.2rem;
+  }
+
+  .nav-links a {
+      font-size: 0.9rem;
+  }
+
+  .scroll-wrapper {
+      padding: 0.5rem;
+  }
+
+  .placeholder-button,
+  .discord-btn,
+  .back-btn {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+  }
+
+  .tagline, .mystic-text {
+      font-size: 0.9rem;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  h2 {
+      font-size: 1.3rem;
+  }
+}

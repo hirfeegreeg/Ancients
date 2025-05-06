@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vote for Team Ancients</title>
+  <link rel="stylesheet" href="vote.css" />
+  <link rel="stylesheet" href="theme.css" />
+  <script src="theme.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Team Ancients</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plot.html">Plot</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="vote.html" class="active">Vote</a></li>
+      </ul>
+
+      <select id="themeSelector">
+        <option value="dark">🌑 Dark</option>
+        <option value="light">📜 Light</option>
+        <option value="neon">🌈 Neon</option>
+        <option value="gold">🏺 Ancient Gold</option>
+        <option value="void">🌀 Void</option>
+      </select>
+      
+    </nav>
+  </header>
+
+  <div class="scroll-wrapper">
+    <section class="intro reveal">
+      <h1>Vote for the Ancients</h1>
+      <p class="tagline">“When the time is right, the Ancients shall rise. Prepare to choose wisely…”</p>
+    </section>
+
+    <section class="instructions reveal">
+      <h2>🗳️ How Voting Works</h2>
+      <p>The Minecraft Movie Community is split into different teams. Each team creates their own story, visuals, and presentation. Once all submissions are complete, everyone will be able to view and vote for their favorite team's creation.</p>
+
+      <p>You, the community, will be the judge. Your vote decides which team told the most epic tale.</p>
+
+      <ul class="details">
+        <li>🛠️ Each team builds their own unique movie world</li>
+        <li>🎬 Plots are presented side-by-side for the community to inspect</li>
+        <li>🗳️ A single vote per person once the vote opens</li>
+        <li>📅 Voting period is limited — don’t miss your chance</li>
+      </ul>
+    </section>
+
+    <section class="vote-button reveal">
+      <h2>🔗 Where to Vote</h2>
+      <p>This is the official link to the voting website. Check the site to see if voting is open — if not, either the time hasn’t come yet or voting has already ended.</p>
+      <a href="https://minecraftcommunitymovie.com" target="_blank">
+        <button class="placeholder-button">🗳️ Vote Now</button>
+      </a>
+      <p class="mystic-text">Voting may not be live yet — keep checking the website for info...</p>
+    </section>
+
+    <section class="call-to-action reveal">
+      <h2>🌟 Why Vote for Us?</h2>
+      <p>Team Ancients dives deep into forgotten realms and timeless tales. Our story is one of legacy, mystery, and power lost to time. If you crave lore, depth, and creative storytelling — vote for the Ancients.</p>
+    </section>
+
+    <section class="discord reveal">
+      <h2>🌀 Want to Join Us?</h2>
+      <p>The Temple doors is still open to worthy minds. Join our Discord and become one with the Ancient Order:</p>
+      <button class="discord-btn" onclick="window.open('https://discord.gg/Aqzzef6acb', '_blank')">💬 Join Our Discord</button>
+    </section>
+
+    <section class="footer-cta">
+      <button class="back-btn" onclick="window.location.href='index.html'">⟵ Back to Home</button>
+    </section>
+  </div>
+
+  <script src="vote.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Ancients – Gallery</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="stylesheet" href="theme.css" />
+  <script src="theme.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Team Ancients</div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plot.html">Plot</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="vote.html">Vote</a></li>
+      </ul>
+      <select id="themeSelector">
+        <option value="dark">🌑 Dark</option>
+        <option value="light">📜 Light</option>
+        <option value="neon">🌈 Neon</option>
+        <option value="gold">🏺 Ancient Gold</option>
+        <option value="void">🌀 Void</option>
+      </select>
+    </nav>
+  </header>
+
+  <div class="scroll-wrapper">
+    <section class="intro">
+      <h1>The Archives</h1>
+      <p class="tagline">“The sacred archives lie sealed beneath stone and silence...”</p>
+    </section>
+
+    <section class="visual-section reveal">
+      <div class="stone-tablet hover-glow">
+        <p>🗿 Visual Records Coming Soon</p>
+        <span class="hover-line">Do you dare return later?</span>
+      </div>
+    </section>
+
+    <section class="teaser-section reveal">
+      <div class="image-wrapper">
+        <img src="download.jfif" alt="Ancient Concept" />
+        <p class="caption">“A glimpse into what once was… or what will be.”</p>
+      </div>
+    </section>
+
+    <section class="footer-cta">
+      <button class="back-btn" onclick="window.location.href='index.html'">⟵ Back to Home</button>
+    </section>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

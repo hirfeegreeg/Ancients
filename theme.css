@@ -1,0 +1,130 @@
+/* Shared Base Styling */
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    transition: background 0.4s, color 0.4s;
+    padding: 0 10px;
+}
+
+#themeSelector {
+    margin-left: auto;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+/* ========== THEMES ========== */
+
+/* 1. Dark Theme */
+body.dark-theme {
+    background: #0d0d0d;
+    color: #f5f5f5;
+}
+
+/* 2. Light Theme */
+body.light-theme {
+    background: #fef9ef;
+    color: #1e1e1e;
+}
+
+/* 3. Neon Theme */
+body.neon-theme {
+    background: #000;
+    color: #39ff14;
+}
+
+body.neon-theme a,
+body.neon-theme h1,
+body.neon-theme h2 {
+    color: #00ffff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #39ff14;
+}
+
+/* 4. Ancient Gold Theme */
+body.gold-theme {
+    background: #3b2f2f;
+    color: #ffd700;
+}
+
+body.gold-theme a {
+    color: #ffdead;
+}
+
+/* 5. Void Theme */
+body.void-theme {
+    background: radial-gradient(circle at center, #000 0%, #1a0022 100%);
+    color: #c770f0;
+}
+
+body.void-theme h1, 
+body.void-theme h2 {
+    text-shadow: 0 0 8px #c770f0;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    #themeSelector {
+        font-size: 0.9rem;
+    }
+
+    body {
+        padding: 0 5px;
+    }
+
+    body.dark-theme, body.light-theme, body.neon-theme, body.gold-theme, body.void-theme {
+        font-size: 1rem;
+    }
+
+    body.neon-theme a, body.neon-theme h1, body.neon-theme h2 {
+        text-shadow: 0 0 3px #ff00ff, 0 0 5px #39ff14;
+    }
+
+    /* Adjustments for theme specific fonts or elements */
+    body.gold-theme h1, body.gold-theme h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Other elements like navbar or footer may need to be adjusted based on layout needs */
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #themeSelector {
+        font-size: 1rem;
+    }
+
+    body {
+        padding: 0 15px;
+    }
+
+    body.dark-theme, body.light-theme, body.neon-theme, body.gold-theme, body.void-theme {
+        font-size: 1.1rem;
+    }
+
+    body.neon-theme a, body.neon-theme h1, body.neon-theme h2 {
+        text-shadow: 0 0 4px #ff00ff, 0 0 8px #39ff14;
+    }
+}
+
+/* Desktop Devices */
+@media (min-width: 1025px) {
+    #themeSelector {
+        font-size: 1.2rem;
+    }
+
+    body {
+        padding: 0 30px;
+    }
+
+    body.dark-theme, body.light-theme, body.neon-theme, body.gold-theme, body.void-theme {
+        font-size: 1.2rem;
+    }
+
+    body.neon-theme a, body.neon-theme h1, body.neon-theme h2 {
+        text-shadow: 0 0 6px #ff00ff, 0 0 12px #39ff14;
+    }
+}
+
+  
